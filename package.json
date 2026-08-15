@@ -1,0 +1,31 @@
+{
+  "name": "skill-consolidator",
+  "version": "2.0.0",
+  "description": "吸星大法 (Skill Consolidator) - cross-platform AI Agent skill consolidator. Scans WorkBuddy/Trae/Cursor/Claude Code/Windsurf/Cline/Continue/Roo Code/Copilot/Codex skills, detects name collisions, functional overlaps and trigger conflicts, generates cleanup reports and categorized indexes.",
+  "main": "skill-consolidator/SKILL.md",
+  "author": "alancouny",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alancouny/skill-consolidator.git"
+  },
+  "homepage": "https://github.com/alancouny/skill-consolidator",
+  "bugs": {
+    "url": "https://github.com/alancouny/skill-consolidator/issues"
+  },
+  "license": "MIT",
+  "files": [
+    "skill-consolidator/",
+    "README.md",
+    "README_EN.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "validate": "node scripts/validate.mjs",
+    "prepublishOnly": "npm run validate",
+    "install:skills": "node skill-consolidator/scripts/install_skills.mjs"
+  },
+  "keywords": ["ai", "agent", "skill", "claude", "cursor", "windsurf", "cline", "trae", "workbuddy", "openclaw", "clawhub", "吸星大法"],
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

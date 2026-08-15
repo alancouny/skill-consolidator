@@ -1,0 +1,14 @@
+# dependencies / build artifacts
+node_modules/
+
+# macOS
+.DS_Store
+
+# local workspace data (WorkBuddy memory & skills, not part of the package)
+.workbuddy/
+
+# logs
+*.log
+
+# generated reports
+skill-consolidation-report.md
